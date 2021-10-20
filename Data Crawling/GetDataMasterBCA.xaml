@@ -1,0 +1,396 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1240,2046" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="46">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.Core.Activities.SAP</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="39">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>GoogleMaps.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="GetData" sap:VirtualizedContainerService.HintSize="898,1981" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="DataBaca" />
+      <Variable x:TypeArguments="x:String" Name="website" />
+      <Variable x:TypeArguments="x:String" Name="kodepos" />
+      <Variable x:TypeArguments="x:String" Name="alamat" />
+      <Variable x:TypeArguments="x:String" Name="kota" />
+      <Variable x:TypeArguments="x:String" Name="telepon" />
+      <Variable x:TypeArguments="x:Int32" Default="2" Name="rowindex" />
+      <Variable x:TypeArguments="x:String" Name="status" />
+      <Variable x:TypeArguments="x:String" Name="codeplus" />
+      <Variable x:TypeArguments="x:String" Name="urlphoto" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ReadRange AddHeaders="True" DataTable="[DataBaca]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="856,87" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="DataMasterBCA" WorkbookPath="Bank.xlsx">
+      <ui:ReadRange.Range>
+        <InArgument x:TypeArguments="x:String">
+          <Literal x:TypeArguments="x:String" Value="" />
+        </InArgument>
+      </ui:ReadRange.Range>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ReadRange>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="856,59" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;We are going to CLOSE all of your browser, make sure your browser SAFE TO LEAVE. Thanks!!&quot;]" />
+    <ui:CloseWindow UseWindow="{x:Null}" ContinueOnError="True" DisplayName="Close Window 'chrome.exe Send'" sap:VirtualizedContainerService.HintSize="856,106" sap2010:WorkflowViewState.IdRef="CloseWindow_1" InformativeScreenshot="95b5e1401e4f30fc6685952d01b1badb" Selector="&lt;html app='chrome.exe' /&gt;" TimeoutMS="1000" WaitForReady="INTERACTIVE" />
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Google Maps" sap:VirtualizedContainerService.HintSize="856,1517" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" ScopeGuid="19b57bde-45a2-4aef-8f19-703d8220eb5e" Version="V1" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="822,1301" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Delay Duration="00:00:04" sap:VirtualizedContainerService.HintSize="780,22" sap2010:WorkflowViewState.IdRef="Delay_1" />
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[DataBaca]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="780,1145" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="Row" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="746,1024" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Flowchart sap:VirtualizedContainerService.HintSize="704,677" sap2010:WorkflowViewState.IdRef="Flowchart_4">
+                      <Flowchart.Variables>
+                        <Variable x:TypeArguments="x:Boolean" Name="ADA" />
+                        <Variable x:TypeArguments="x:Boolean" Name="LIST" />
+                      </Flowchart.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          <av:Point x:Key="ShapeLocation">20,2.5</av:Point>
+                          <av:Size x:Key="ShapeSize">60,75</av:Size>
+                          <x:Double x:Key="Height">641</x:Double>
+                          <av:PointCollection x:Key="ConnectorLocation">80,40 120,40</av:PointCollection>
+                          <x:Double x:Key="Width">670</x:Double>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Flowchart.StartNode>
+                        <x:Reference>__ReferenceID5</x:Reference>
+                      </Flowchart.StartNode>
+                      <FlowStep x:Name="__ReferenceID5">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <av:Point x:Key="ShapeLocation">120,14.5</av:Point>
+                            <av:Size x:Key="ShapeSize">200,51</av:Size>
+                            <av:PointCollection x:Key="ConnectorLocation">320,40 450,40 450,96.5</av:PointCollection>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="OpenAndNavigateMaps" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="Data Crawling\OpenAndNavigateMaps.xaml">
+                          <ui:InvokeWorkflowFile.Arguments>
+                            <InArgument x:TypeArguments="x:String" x:Key="in_provinsi">[row(2).ToString]</InArgument>
+                            <InArgument x:TypeArguments="x:String" x:Key="in_statuscabang">[row(0).ToString]</InArgument>
+                            <InArgument x:TypeArguments="x:String" x:Key="in_namacabang">[row(1).ToString]</InArgument>
+                            <OutArgument x:TypeArguments="x:Boolean" x:Key="out_AdaDiMaps">[ADA]</OutArgument>
+                            <OutArgument x:TypeArguments="x:Boolean" x:Key="out_AdaPilihan">[LIST]</OutArgument>
+                          </ui:InvokeWorkflowFile.Arguments>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:InvokeWorkflowFile>
+                        <FlowStep.Next>
+                          <FlowDecision x:Name="__ReferenceID1" Condition="[ADA]" DisplayName="Flow Decision Hasil Ditemukan" sap:VirtualizedContainerService.HintSize="160,87" sap2010:WorkflowViewState.IdRef="FlowDecision_4">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <av:Point x:Key="ShapeLocation">370,96.5</av:Point>
+                                <av:Size x:Key="ShapeSize">160,87</av:Size>
+                                <av:PointCollection x:Key="TrueConnector">370,140 90,140 90,480 120,480</av:PointCollection>
+                                <av:PointCollection x:Key="FalseConnector">530,140 560,140 560,216.5</av:PointCollection>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <FlowDecision.True>
+                              <FlowStep x:Name="__ReferenceID0">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <av:Point x:Key="ShapeLocation">120,454.5</av:Point>
+                                    <av:Size x:Key="ShapeSize">200,51</av:Size>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke ScrapeDataBCAMaster workflow" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_11" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="Data Crawling\ScrapeDataBCAMaster.xaml">
+                                  <ui:InvokeWorkflowFile.Arguments>
+                                    <OutArgument x:TypeArguments="x:String" x:Key="out_alamatlengkap">
+                                      <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="alamat" />
+                                    </OutArgument>
+                                    <OutArgument x:TypeArguments="x:String" x:Key="out_kota">
+                                      <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="kota" />
+                                    </OutArgument>
+                                    <OutArgument x:TypeArguments="x:String" x:Key="out_kodepos">
+                                      <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="kodepos" />
+                                    </OutArgument>
+                                    <OutArgument x:TypeArguments="x:String" x:Key="out_codeplus">
+                                      <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="codeplus" />
+                                    </OutArgument>
+                                  </ui:InvokeWorkflowFile.Arguments>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </ui:InvokeWorkflowFile>
+                              </FlowStep>
+                            </FlowDecision.True>
+                            <FlowDecision.False>
+                              <FlowDecision x:Name="__ReferenceID2" Condition="[LIST]" DisplayName="Flow Decision Hasil List" sap:VirtualizedContainerService.HintSize="129,87" sap2010:WorkflowViewState.IdRef="FlowDecision_3">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <av:Point x:Key="ShapeLocation">495.5,216.5</av:Point>
+                                    <av:Size x:Key="ShapeSize">129,87</av:Size>
+                                    <av:PointCollection x:Key="TrueConnector">495.5,260 320,260</av:PointCollection>
+                                    <av:PointCollection x:Key="FalseConnector">624.5,260 654.5,260 654.5,424.5 450,424.5 450,454.5</av:PointCollection>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <FlowDecision.True>
+                                  <FlowStep x:Name="__ReferenceID4">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <av:Point x:Key="ShapeLocation">120,234.5</av:Point>
+                                        <av:Size x:Key="ShapeSize">200,51</av:Size>
+                                        <av:PointCollection x:Key="ConnectorLocation">220,285.5 220,454.5</av:PointCollection>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <uix:NClick ClickType="Single" CursorMotionType="Instant" DisplayName="Click 1st List" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="19b57bde-45a2-4aef-8f19-703d8220eb5e">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://www.google.com/maps/search/BCA+KCU+BALIKPAPAN+Kalimantan+Timur/@-1.2446091,116.8328795,13z/data=!3m1!4b1" DesignTimeRectangle="8, 227, 402, 154" FriendlyName="'A'" FullSelectorArgument="&lt;webctrl parentid='pane' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='pane' tag='A' type='' aaname='' /&gt;" Guid="57a58bac-9133-4fb6-9a47-75f738d1130e" ImageBase64="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" InformativeScreenshot="787151862eea9cf998dc0e162b8070cb.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='BCA KCU BALIKPAPAN Kalimantan Timur - Google Maps' /&gt;" SearchSteps="Selector, Image" />
+                                      </uix:NClick.Target>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </uix:NClick>
+                                    <FlowStep.Next>
+                                      <x:Reference>__ReferenceID0</x:Reference>
+                                    </FlowStep.Next>
+                                  </FlowStep>
+                                </FlowDecision.True>
+                                <FlowDecision.False>
+                                  <FlowStep x:Name="__ReferenceID3">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <av:Point x:Key="ShapeLocation">350,454.5</av:Point>
+                                        <av:Size x:Key="ShapeSize">200,51</av:Size>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ui:MultipleAssign DisplayName="Assign not found" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+                                      <ui:MultipleAssign.AssignOperations>
+                                        <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
+                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_8">
+                                            <ui:AssignOperation.To>
+                                              <OutArgument x:TypeArguments="x:String">[alamat]</OutArgument>
+                                            </ui:AssignOperation.To>
+                                            <ui:AssignOperation.Value>
+                                              <InArgument x:TypeArguments="x:String">[Nothing]</InArgument>
+                                            </ui:AssignOperation.Value>
+                                          </ui:AssignOperation>
+                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_9">
+                                            <ui:AssignOperation.To>
+                                              <OutArgument x:TypeArguments="x:String">[kota]</OutArgument>
+                                            </ui:AssignOperation.To>
+                                            <ui:AssignOperation.Value>
+                                              <InArgument x:TypeArguments="x:String">[Nothing]</InArgument>
+                                            </ui:AssignOperation.Value>
+                                          </ui:AssignOperation>
+                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_10">
+                                            <ui:AssignOperation.To>
+                                              <OutArgument x:TypeArguments="x:String">[kodepos]</OutArgument>
+                                            </ui:AssignOperation.To>
+                                            <ui:AssignOperation.Value>
+                                              <InArgument x:TypeArguments="x:String">[Nothing]</InArgument>
+                                            </ui:AssignOperation.Value>
+                                          </ui:AssignOperation>
+                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_11">
+                                            <ui:AssignOperation.To>
+                                              <OutArgument x:TypeArguments="x:String">[website]</OutArgument>
+                                            </ui:AssignOperation.To>
+                                            <ui:AssignOperation.Value>
+                                              <InArgument x:TypeArguments="x:String">[Nothing]</InArgument>
+                                            </ui:AssignOperation.Value>
+                                          </ui:AssignOperation>
+                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_12">
+                                            <ui:AssignOperation.To>
+                                              <OutArgument x:TypeArguments="x:String">[codeplus]</OutArgument>
+                                            </ui:AssignOperation.To>
+                                            <ui:AssignOperation.Value>
+                                              <InArgument x:TypeArguments="x:String">[Nothing]</InArgument>
+                                            </ui:AssignOperation.Value>
+                                          </ui:AssignOperation>
+                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_13">
+                                            <ui:AssignOperation.To>
+                                              <OutArgument x:TypeArguments="x:String">[telepon]</OutArgument>
+                                            </ui:AssignOperation.To>
+                                            <ui:AssignOperation.Value>
+                                              <InArgument x:TypeArguments="x:String">[Nothing]</InArgument>
+                                            </ui:AssignOperation.Value>
+                                          </ui:AssignOperation>
+                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_14">
+                                            <ui:AssignOperation.To>
+                                              <OutArgument x:TypeArguments="x:String">[status]</OutArgument>
+                                            </ui:AssignOperation.To>
+                                            <ui:AssignOperation.Value>
+                                              <InArgument x:TypeArguments="x:String">DATA TIDAK DITEMUKAN</InArgument>
+                                            </ui:AssignOperation.Value>
+                                          </ui:AssignOperation>
+                                        </scg:List>
+                                      </ui:MultipleAssign.AssignOperations>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </ui:MultipleAssign>
+                                  </FlowStep>
+                                </FlowDecision.False>
+                              </FlowDecision>
+                            </FlowDecision.False>
+                          </FlowDecision>
+                        </FlowStep.Next>
+                      </FlowStep>
+                      <x:Reference>__ReferenceID1</x:Reference>
+                      <x:Reference>__ReferenceID2</x:Reference>
+                      <x:Reference>__ReferenceID3</x:Reference>
+                      <x:Reference>__ReferenceID0</x:Reference>
+                      <x:Reference>__ReferenceID4</x:Reference>
+                    </Flowchart>
+                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Write to Excel" sap:VirtualizedContainerService.HintSize="704,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="Data Crawling\WriteToExcelAlamatBCAMaster.xaml">
+                      <ui:InvokeWorkflowFile.Arguments>
+                        <InArgument x:TypeArguments="x:String" x:Key="in_alamat">[alamat]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="in_kota">[kota]</InArgument>
+                        <InArgument x:TypeArguments="x:Int32" x:Key="in_rowindex">[rowindex]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="in_codeplus">[codeplus]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="in_kodepos">[kodepos]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="DataMasterBCA">DataMasterBCA</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="in_urlphoto">[urlphoto]</InArgument>
+                      </ui:InvokeWorkflowFile.Arguments>
+                    </ui:InvokeWorkflowFile>
+                    <Assign DisplayName="i++" sap:VirtualizedContainerService.HintSize="704,61" sap2010:WorkflowViewState.IdRef="Assign_4">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Int32">[rowindex]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Int32">[rowindex+1]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:ForEachRow>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="9b61c35fc3dcf97719154ac51c4555f3.png" Selector="&lt;html app='chrome.exe' title='Google Maps'/&gt;" Url="https://www.google.com/maps/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
